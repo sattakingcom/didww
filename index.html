@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DidWala.com | Microsoft Teams Phone & RingCentral Accounts</title>
+  <meta name="description" content="Get Microsoft Teams Phone and RingCentral Accounts for your business. Official partner. Fast setup. 24/7 WhatsApp Support.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      background: #f9fafb;
+      color: #222;
+    }
+    header {
+      background: #2563eb;
+      color: white;
+      padding: 1.5rem 0;
+      text-align: center;
+      letter-spacing: 1px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 18px;
+      font-weight: 500;
+      transition: opacity .2s;
+    }
+    nav a:hover {
+      opacity: 0.7;
+    }
+    .container {
+      max-width: 1024px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 2rem;
+    }
+    .hero-content {
+      flex: 1 1 350px;
+    }
+    .hero-image img {
+      width: 340px;
+      border-radius: 18px;
+      box-shadow: 0 4px 32px rgba(60,60,100,0.08);
+      max-width: 100%;
+    }
+    h1 {
+      font-size: 2.6rem;
+      margin-bottom: .5rem;
+      font-weight: 700;
+      letter-spacing: -1px;
+    }
+    .cta-btn, .whatsapp-btn {
+      display: inline-block;
+      margin-top: 1.2rem;
+      background: #25d366;
+      color: white;
+      padding: 0.8rem 2rem;
+      border: none;
+      border-radius: 50px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      box-shadow: 0 2px 12px rgba(60,180,80,.10);
+      cursor: pointer;
+      text-decoration: none;
+      transition: background .2s;
+    }
+    .cta-btn {
+      background: #2563eb;
+      margin-right: 1rem;
+    }
+    .cta-btn:hover { background: #1640b2; }
+    .whatsapp-btn:hover { background: #128C7E; }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-bottom: 2.5rem;
+      justify-content: center;
+    }
+    .feature-card {
+      flex: 1 1 240px;
+      background: white;
+      border-radius: 14px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+      padding: 1.5rem;
+      text-align: center;
+      margin: .5rem 0;
+    }
+    .feature-card img {
+      width: 48px;
+      margin-bottom: .7rem;
+    }
+    h2 {
+      font-size: 2rem;
+      margin: 1.5rem 0 1rem 0;
+      font-weight: 600;
+    }
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-bottom: 2.5rem;
+      justify-content: center;
+    }
+    .service-box {
+      flex: 1 1 340px;
+      background: #e0e7ff;
+      border-radius: 14px;
+      padding: 1.4rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 2px 16px rgba(37,99,235,0.05);
+    }
+    .service-box img {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 1rem;
+      max-height: 160px;
+      object-fit: cover;
+      background: #f3f4f6;
+    }
+    .steps {
+      background: #f1f5f9;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 2.5rem;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.03);
+    }
+    .steps ol {
+      margin: 0;
+      padding-left: 1.2rem;
+    }
+    .contact-box {
+      background: #fff;
+      border-radius: 14px;
+      padding: 2rem;
+      margin: 2rem 0;
+      box-shadow: 0 2px 16px rgba(60,60,100,0.05);
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .contact-box input, .contact-box select, .contact-box textarea {
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: .8rem;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+    .contact-box button {
+      background: #2563eb;
+      color: white;
+      padding: 0.9rem 2rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .contact-box button:hover {
+      background: #1640b2;
+    }
+    footer {
+      background: #f1f5f9;
+      color: #333;
+      text-align: center;
+      padding: 1.2rem 0 0.5rem 0;
+      margin-top: 2rem;
+      font-size: 1rem;
+      border-top: 1px solid #e5e7eb;
+    }
+    footer a { color: #2563eb; text-decoration: none; }
+    @media (max-width: 900px) {
+      .hero { flex-direction: column; }
+      .features, .services { flex-direction: column; }
+      .feature-card, .service-box { flex: 1 1 100%; }
+      .hero-image img { width: 100%; }
+    }
+    @media (max-width: 600px) {
+      h1 { font-size: 2rem; }
+      h2 { font-size: 1.2rem; }
+      .container { padding: 1rem; }
+      .feature-card, .service-box, .contact-box { padding: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div style="font-size:2rem;font-weight:700;display:inline-block;vertical-align:middle;">
+      <span style="margin-right:.5rem;">📞</span>DidWala.com
+    </div>
+    <nav style="margin-top:.6rem;">
+      <a href="#home">Home</a>
+      <a href="#teams">Microsoft Teams Phone</a>
+      <a href="#ringcentral">RingCentral</a>
+      <a href="#contact">Contact Us</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#terms">Terms</a>
+    </nav>
+  </header>
+
+  <main class="container" id="home">
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Empower Your Business with Cloud Phone Solutions</h1>
+        <p style="font-size:1.23rem;line-height:1.6;">
+          Seamless calling, conferencing, and collaboration with <b>Microsoft Teams Phone</b> & <b>RingCentral</b>. Official Partner, Fast Setup, 24/7 Support!
+        </p>
+        <a class="cta-btn" href="#contact">Get Started</a>
+        <a class="whatsapp-btn" href="https://wa.me/15107093362" target="_blank">WhatsApp: +1 (510) 709-3362</a>
+      </div>
+      <div class="hero-image">
+        <!-- AI IMAGE 1 -->
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?fit=crop&w=800&q=80" alt="Modern business video call">
+      </div>
+    </section>
+
+    <h2>Why Choose DidWala.com?</h2>
+    <section class="features">
+      <div class="feature-card">
+        <img src="https://img.icons8.com/ios-filled/100/2563eb/phone-office.png" alt="Phone Partner">
+        <div>Official Partner<br>Microsoft & RingCentral</div>
+      </div>
+      <div class="feature-card">
+        <img src="https://img.icons8.com/ios-filled/100/2563eb/whatsapp.png" alt="WhatsApp Support">
+        <div>24/7 Support<br>on WhatsApp</div>
+      </div>
+      <div class="feature-card">
+        <img src="https://img.icons8.com/ios-filled/100/2563eb/clock--v1.png" alt="Quick Setup">
+        <div>Quick Setup &<br>Number Porting</div>
+      </div>
+      <div class="feature-card">
+        <img src="https://img.icons8.com/ios-filled/100/2563eb/cheap-2.png" alt="Best Pricing">
+        <div>Best Pricing<br>for All Businesses</div>
+      </div>
+    </section>
+
+    <h2 id="teams">Our Services</h2>
+    <section class="services">
+      <div class="service-box">
+        <h3>Microsoft Teams Phone</h3>
+        <ul>
+          <li>Integrate calls into your Teams app</li>
+          <li>Local, toll-free & international numbers</li>
+          <li>Easy setup & management</li>
+        </ul>
+        <!-- AI IMAGE 2 -->
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?fit=crop&w=800&q=80" alt="Teams Phone System">
+      </div>
+      <div class="service-box" id="ringcentral">
+        <h3>RingCentral Accounts</h3>
+        <ul>
+          <li>Business numbers & PBX solutions</li>
+          <li>Call recording, IVR, SMS, analytics</li>
+          <li>Scalable for remote teams</li>
+        </ul>
+        <!-- AI IMAGE 3 -->
+        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?fit=crop&w=800&q=80" alt="RingCentral Analytics">
+      </div>
+    </section>
+
+    <h2>How It Works</h2>
+    <section class="steps">
+      <ol>
+        <li><b>Contact Us</b> – Message us on WhatsApp or fill the form.</li>
+        <li><b>Consultation</b> – Free assessment of your needs.</li>
+        <li><b>Quick Setup</b> – Go live in as little as 1 business day!</li>
+      </ol>
+    </section>
+
+    <section class="contact-box" id="contact">
+      <h2>Get a Free Quote</h2>
+      <form name="contact" method="POST" netlify>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="text" name="company" placeholder="Company Name">
+        <input type="tel" name="phone" placeholder="Phone Number">
+        <select name="service" required>
+          <option value="">Service Interested In</option>
+          <option>Microsoft Teams Phone</option>
+          <option>RingCentral</option>
+          <option>Both</option>
+        </select>
+        <textarea name="message" rows="3" placeholder="Tell us about your needs"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+      <div style="margin-top:1rem;font-size:1.1rem;">
+        <b>Or chat on WhatsApp:</b> <a class="whatsapp-btn" href="https://wa.me/15107093362" target="_blank">+1 (510) 709-3362</a>
+      </div>
+    </section>
+
+    <section style="margin: 2rem 0;">
+      <h2>Need Fast Support?</h2>
+      <a class="whatsapp-btn" href="https://wa.me/15107093362" target="_blank">Message Us on WhatsApp</a>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <a href="#privacy">Privacy Policy</a> | 
+      <a href="#terms">Terms & Conditions</a>
+    </div>
+    <div style="margin-top:.5rem;">
+      &copy; 2025 DidWala.com. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- Privacy Policy (hidden, shows when anchor is clicked) -->
+  <div id="privacy" style="background:white;max-width:700px;margin:60px auto;padding:2rem;border-radius:12px;display:none;">
+    <h2>Privacy Policy</h2>
+    <p>Your privacy is important to us. We collect your contact details only to provide our services and do not share or sell your information to third parties. Data collected via forms or WhatsApp is used solely for communication regarding your inquiry. For questions, contact us at <a href="mailto:info@didwala.com">info@didwala.com</a></p>
+  </div>
+  <!-- Terms & Conditions (hidden, shows when anchor is clicked) -->
+  <div id="terms" style="background:white;max-width:700px;margin:60px auto;padding:2rem;border-radius:12px;display:none;">
+    <h2>Terms & Conditions</h2>
+    <p>All sales and service agreements are subject to our review. We strive to deliver services as described. Payment and service setup details will be discussed upon order. For support, reach us on WhatsApp or our contact form.</p>
+  </div>
+  <script>
+    // Simple anchor scroll and policy pop-up
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.onclick = function(e) {
+        if (this.getAttribute('href') === "#privacy" || this.getAttribute('href') === "#terms") {
+          e.preventDefault();
+          document.getElementById('privacy').style.display = 'none';
+          document.getElementById('terms').style.display = 'none';
+          document.getElementById(this.getAttribute('href').substring(1)).style.display = 'block';
+          window.scrollTo({top: 80, behavior:'smooth'});
+        }
+      }
+    });
+  </script>
+</body>
+</html>
